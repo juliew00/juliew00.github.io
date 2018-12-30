@@ -15,158 +15,167 @@
 <script src="main.js"></script>
 
 <body>
+    <div id="topBorder"></div>
+
+    <nav>
+        <a id="navAbout" href="#About"
+        onmouseover="highlight(navAbout)"
+        onmouseout="unhighlight(navAbout)">About</a>
+
+        <a id="navProjects" href="#Projects" 
+        onmouseover="highlight(navProjects)"
+        onmouseout="unhighlight(navProjects)">Projects</a>
+
+        <a id="navContact" href="#Contact" 
+        onmouseover="highlight(navContact)"
+        onmouseout="unhighlight(navContact)">Contact</a>
+    </nav>
+
+    <div class="title_main">
+        <h1>
+            <a href="./index.html"><strong>julie wu</strong></a>
+            <div class="bg"></div>
+            <div class="bg bg2"></div>
+            <div class="bg bg3"></div>
+        </h1>
+    </div>
+
+    <div class="content">
+
+        <div id="About">
+            <h2 class="heading">👩🏻‍💻 About Me</h2>
+
+            <div class="container1">
+                <p id="Introduction">
+                    Hey! I'm <strong>Julie</strong>, and I
+                    <span 
+                        class="txt-type" data-wait="3000" 
+                        data-words= '["am an aspiring coder.", 
+                                    "am just a young star looking for her galaxy.",
+                                    "love my dog.",
+                                    "am an aspiring chef.",
+                                    "am a film lover.",
+                                    "am a casual chess player.",
+                                    "enjoy playing sports.",
+                                    "miss vine :("]'>
+                    </span>           
+                </p>
+                <br>
+                <p id="LifeandEducation">
+                    Born and raised in <span style="color: rgb(0, 107, 144)"><strong>Toronto, ON.</strong></span>, I'm currently 
+                    a student studying <strong>Math/BBA</strong> at the 
+                    <strong><span style="background-color:rgb(255, 213, 79)">University of Waterloo</span></strong> 
+                    & <br><strong><span style="background-color:rgb(61, 22, 139); color: white">Laurier University</span></strong>.
+                </p>
+                <br>
+                <p id="Information">
+                    Welcome to my website! Feel free to check out my projects or contact me via email <br>
+                    (<a href="mailto:julie-wu@outlook.com" class="link"><u>julie-wu@outlook.com</u></a>) 
+                    or through the social media links below!
+                    <br>
+                    Here's a link to my resume: (<a href="Media/julie_wu_resume_2018.pdf" target="_blank" class="link"><u>julie_wu_resume_2018.pdf</u></a>)
+                </p>    
+            </div>
+        </div>
+
+        <div id="Projects">
+            <h2 class="heading">Projects</h2>
+
+            <div class="containerGrid">
+                <div class="proj one">
+                    <div class="card-flip">
+                        <div class="front">
+                        </div>
+                        <div class="back">
+                            <h4>projects coming soon ...</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="proj two">
+                    <div class="card-flip">
+                        <div class="front">
+                        </div>
+                        <div class="back">
+                            <h4>projects coming soon ...</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="proj three">
+                    <div class="card-flip">
+                        <div class="front">
+                        </div>
+                        <div class="back">
+                            <h4>projects coming soon ...</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     
-    <div class="colorpalette">
-        <div class="color a"></div>
-    </div> 
 
-    <header>
-        <nav class="Nav">
-            <div class="navWords">
-                <a id="navAbout" href="#About"
-                onmouseover="highlight(navAbout)"
-                onmouseout="unhighlight(navAbout)">About</a>
+        <div id="Contact">
 
-                <a id="navProjects" href="#Projects" 
-                onmouseover="highlight(navProjects)"
-                onmouseout="unhighlight(navProjects)">Projects</a>
-
-                <a id="navContact" href="#Contact" 
-                onmouseover="highlight(navContact)"
-                onmouseout="unhighlight(navContact)">Contact</a>
-            </div>
-        </nav>
+            <h2 class="heading">💬 Connect</h2>
         
-        <div class="Title">
-            <h1 id="main_title"><a href="./Home.html"><strong>julie wu</strong></a>
-                <div class="bg"></div>
-                <div class="bg bg2"></div>
-                <div class="bg bg3"></div>
-            </h1>
-        </div>
-    </header>
-
-    <div id="About">
-        <h2 class="Heading">👩🏻‍💻 About Me</h2>
-
-    <div class="Block1">
-        <p id="Introduction">
-            Hey! I'm <strong>Julie</strong>, and I
-            <span 
-            class="txt-type" data-wait="3000" 
-            data-words= '["am an aspiring coder.", 
-                        "am just a young star looking for her galaxy.",
-                        "love my dog.",
-                        "am an aspiring chef.",
-                        "am a film lover.",
-                        "am a casual chess player.",
-                        "enjoy playing sports.",
-                        "miss vine :("]'>
-            </span> 
-            
-        </p>
-        <br>
-        <p id="LifeandEducation">
-            Born and raised in <span style="color: rgb(0, 107, 144)"><strong>Toronto, ON.</strong></span>, I'm currently 
-            a student studying <strong>Math/BBA</strong> at the 
-            <strong><span style="background-color:rgb(255, 213, 79)">University of Waterloo</span></strong> 
-            & <br><strong><span style="background-color:rgb(61, 22, 139); color: white">Laurier University</span></strong>.
-        </p>
-        <br>
-         <p id="Information">
-            Welcome to my website! Feel free to check out my projects or contact me via email <br>
-            (<a href="mailto:julie-wu@outlook.com" class="link"><u>julie-wu@outlook.com</u></a>) 
-            or through the social media links below!
-            <br>
-            Here's a link to my resume: (<a href="Media/julie_wu_resume_2018.pdf" target="_blank" class="link"><u>julie_wu_resume_2018.pdf</u></a>)
-        </p>
-    </div>
-
-    </div>
-
-    <div id="Projects">
-        <h2 class="Heading">Projects</h2>
-        <div id="project_grid">
-            <div class="project 1">
+                <div class="container2">
                 
-            </div>
-            <div class="project 2">
 
-            </div>
+                    <a href="Media/julie_wu_resume_2018.pdf" target="_blank">
+                        <img class="resume button" 
+                            src="Media/resume_icon.png">
+                    </a>
+            
+                    <a href="mailto:julie-wu@outlook.com">
+                        <img class="mail button"
+                            src="Media/Mail_icon.png">
+                    </a>
+            
+                    <a href="https://www.linkedin.com/in/julie-wu/" target="_blank">
+                    <img class="linkedin button" 
+                            src="Media/linkedin_icon.png">
+                    </a>
+            
+                    <a href="https://twitter.com/JumboJulie" target="_blank">
+                        <img class="twitter button" 
+                            src="Media/twitter_icon.png">
+                    </a>
+            
+                    <a href="https://github.com/juliew00" target="_blank">
+                        <img class="github button" 
+                            src="Media/github_icon.png">
+                    </a>
+            
+                    <div class="button circle 1" style="top:10%; left:10%"></div>
+                    <div class="button circle 2" style="top:80%; left:30%"></div>
+                    <div class="button circle 3" style="top:0%; left:75%"></div>
+                    <div class="button circle 4" style="top:55%; left:93%"></div>
+                    <div class="button circle 5" style="top:100%; left:65%"></div>
+            
+                    <div class="line line1" style ="top: 12%; left: 15%; width: 22%; transform: rotate(-5deg);"></div>
+                    <div class="line line2" style ="top: 29%; left: 10%; width: 12%; transform: rotate(75deg);"></div>
+                    <div class="line line3" style ="top: 35%; left: 25%; width: 14%; transform: rotate(-45deg);"></div>
+                    <div class="line line4" style ="top: 44.5%; left: 44%; width: 12%; transform: rotate(80deg);"></div>
+                    <div class="line line6" style ="top: 26%; left: 56%; width: 16%; transform: rotate(30deg);"></div>
+                    <div class="line line7" style ="top: 68%; left: 29%; width: 16%; transform: rotate(5deg);"></div>
+                    <div class="line line8" style ="top: 56%; left: 60%; width: 14%; transform: rotate(-35deg);"></div>
+                    <div class="line line9" style ="top: 74%; left: 62%; width: 15%; transform: rotate(5deg);"></div>
+                    <div class="line line10" style ="top: 61%; left: 74%; width: 11%; transform: rotate(80deg);"></div>
+                    <div class="line line11" style ="top: 8%; left: 57.5%; width: 18%; transform: rotate(-5deg);"></div>
+                    <div class="line line12" style ="top: 17%; left: 73.5%; width: 7%; transform: rotate(90deg);"></div>
+                    <div class="line line13" style ="top: 50%; left: 83%; width: 14%; transform: rotate(30deg);"></div>
+                    <div class="line line14" style ="top: 70%; left: 85%; width: 12%; transform: rotate(-37deg);"></div>
+                    <div class="line line15" style ="top: 80%; left: 35%; width: 12%; transform: rotate(-20deg);"></div>
+                    <div class="line line16" style ="top: 76%; left: 26%; width: 7%; transform: rotate(50deg);"></div>
+                    <div class="line line17" style ="top: 92.7%; left: 56.7%; width: 11%; transform: rotate(50deg);"></div>
+                    <div class="line line17" style ="top: 95.5%; left: 68.5%; width: 10%; transform: rotate(-40deg);"></div>
+                
+                </div>
         </div>
-
-
-    </div>
-
-
-    <div id="Contact">
-
-        <h2 class="Heading">💬 Let's Connect 💬</h2>
-
-        <div class="Block2">
-
-        <a href="Media/julie_wu_resume_2018.pdf" target="_blank">
-            <img class="resume button" src="Media/resume_icon.png"
-            height= 200px width=200px>
-        </a>
-        
-
-        <a href="mailto:julie-wu@outlook.com">
-
-            <img class="mail button"
-                src="Media/Mail_icon.png"
-                height= 175px width=175px>
-        </a>
-
-        <a href="https://www.linkedin.com/in/julie-wu/" target="_blank">
-           <img class="linkedin button" src="Media/linkedin_icon.png"
-           height= 150px width=150px>
-        </a>
-
-        <a href="https://twitter.com/JumboJulie" target="_blank">
-            <img class="twitter button" src="Media/twitter_icon.png" 
-            height= 125px width=125px>
-        </a>
-
-        <a href="https://github.com/juliew00" target="_blank">
-            <img class="github button" src="Media/github_icon.png"
-            height= 100px width=100px>
-        </a>
-
-        <div class="button circle 1" style="top:10%; left:10%"></div>
-        <div class="button circle 2" style="top:80%; left:30%"></div>
-        <div class="button circle 3" style="top:0%; left:75%"></div>
-        <div class="button circle 4" style="top:55%; left:93%"></div>
-        <div class="button circle 5" style="top:100%; left:65%"></div>
-
-        <div class="line line1" style ="top: 12%; left: 15%; width: 19.5%; transform: rotate(-5deg);"></div>
-        <div class="line line2" style ="top: 29%; left: 10%; width: 10%; transform: rotate(75deg);"></div>
-        <div class="line line3" style ="top: 35%; left: 25%; width: 13.5%; transform: rotate(-45deg);"></div>
-        <div class="line line4" style ="top: 44.5%; left: 44%; width: 10.5%; transform: rotate(80deg);"></div>
-        <div class="line line6" style ="top: 26%; left: 56%; width: 15%; transform: rotate(30deg);"></div>
-        <div class="line line7" style ="top: 68%; left: 29%; width: 15%; transform: rotate(5deg);"></div>
-        <div class="line line8" style ="top: 56%; left: 60%; width: 13%; transform: rotate(-35deg);"></div>
-        <div class="line line9" style ="top: 74%; left: 62%; width: 13.5%; transform: rotate(5deg);"></div>
-        <div class="line line10" style ="top: 61%; left: 74%; width: 9%; transform: rotate(80deg);"></div>
-        <div class="line line11" style ="top: 8%; left: 57.5%; width: 17%; transform: rotate(-5deg);"></div>
-        <div class="line line12" style ="top: 17%; left: 73.5%; width: 6.5%; transform: rotate(90deg);"></div>
-        <div class="line line13" style ="top: 50%; left: 83%; width: 13%; transform: rotate(30deg);"></div>
-        <div class="line line14" style ="top: 70%; left: 85%; width: 11.5%; transform: rotate(-37deg);"></div>
-        <div class="line line15" style ="top: 80%; left: 35%; width: 10%; transform: rotate(-20deg);"></div>
-        <div class="line line16" style ="top: 76%; left: 26%; width: 5.5%; transform: rotate(50deg);"></div>
-        <div class="line line17" style ="top: 92.7%; left: 56.7%; width: 10.5%; transform: rotate(50deg);"></div>
-        <div class="line line17" style ="top: 95.5%; left: 68.5%; width: 9%; transform: rotate(-40deg);"></div>
-        </div>
-
-        
 
     </div>
 
     <footer class="Footer">
-        <p>Created and coded by Julie Wu - 2018</p>
+        <h3>Made by Julie Wu - 2018</h3>
     </footer>
-
 </body>
-
 </html>
-

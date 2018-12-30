@@ -79,7 +79,6 @@ Navigation Bar Effect
 
 */
 
-
 function highlight(id) {
     this.id = id;
     id.style.fontWeight = "bold";
@@ -93,9 +92,4 @@ function unhighlight(id){
     id.style.backgroundPosition = "left bottom";
     id.style.fontStyle = "italic";
 }
-// *********************************************************************
-/*
 
-Title Effect
-
-*/

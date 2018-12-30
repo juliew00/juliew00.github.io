@@ -1,49 +1,60 @@
-/*
-
-COLORS:
-
-off-white: rgb(255, 253, 248)
-dark yellow: rgb(252, 193, 82)
-blue: rgb(52, 168, 209)
-light blue: rgb(88, 208, 250)
-dark blue: rgb(0, 107, 144)
-orange: rgb(243, 139, 14)
-light orange: rgb(249, 181, 99)
-brown: rgb(106, 77, 46)
-red: rgb(206, 69, 52)
-dark grey: rgb(48,48,48)
-UW gold: rgb(255, 213, 79)
-Laurier Purple: rgb(61, 22, 139)
-
-*/
-*{
-    padding: 0;
-    margin: 0;
+* {
+    margin: 0 auto;
+    padding: 0 auto;
     scroll-behavior: smooth;
     text-decoration: none;
 }
-
 html{
+    font-size: 25px;
+    font-family: Helvetica, sans-serif;
     overflow-x: hidden;
-}
-.colorpalette{
-    display: grid;
-    grid-template: 1/1;
-    height: 30px;
-    width: 100%;
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
-    top: 0px;
-    left: 0px;
-}
-.a{
-    background-color: rgb(48,48,48);
-    grid-area: 1/1;
+    color:rgb(48,48,48);
 }
 
-.Title {
+/**************************************************************************
+    Top bar
+**************************************************************************/
+#topBorder{
+    height: 5vh;
+    background-color: rgb(48,48,48);
+}
+
+/**************************************************************************
+    Navigation Section
+**************************************************************************/
+nav{
+    margin: 0 15% 0 15%;
+    text-align: right;
+    padding: 1rem 0px 1rem 0px;
+    word-spacing: 3rem;
+}
+
+nav a{
+    font-family: "Roboto Mono";
+    font-size: 1rem;
+    color:rgb(48,48,48);
+    font-style: italic;
+    
+    /* for hover effect */
+    background: linear-gradient(to right, rgba(255,255,255,0) 50%, rgba(255, 255, 0,1.0) 50%);
+    transition: .15s ease-in-out;
+    display: inline-block;
+    background-position: left bottom;
+    background-size: 200%;
+}
+
+#navText{
+    text-align: right;
+}
+
+/**************************************************************************
+    Title
+**************************************************************************/
+
+.title_main{
+    padding: 20vh 0 25vh 0;
+    position: relative;
     text-align: center;
-    padding: 150px 0px 200px 0px;
     text-shadow: 1px 1px rgb(80,80,80),
     2px 2px rgb(80,80,80),
     3px 3px rgb(80,80,80),
@@ -62,195 +73,11 @@ html{
     16px 16px rgb(80,80,80),
     17px 17px rgb(80,80,80);
 }
-
-
-.Title a{
-    color: white; 
-}
-
-
-.Nav{
-    text-align: right;
-    padding: 25px 0px 25px 0px;
-    word-spacing: 75px;
-    background-color: white;
-}
-
-.navWords{
-    margin: 0px 17% 0px 17%;
-}
-
-.Nav a{
-    
-    color:rgb(48,48,48);
-    font-style: italic;
-    background: linear-gradient(to right, rgba(255,255,255,0) 50%, rgba(255, 255, 0,1.0) 50%);
-    transition: .15s ease-in-out;
-    display: inline-block;
-    background-position: left bottom;
-    background-size: 200%;
-    height: 0.7em;
-    line-height: 1.05;
-}
-
-
-.Heading{
-    text-align: left;
-    padding: 25px 0 50px 0;
-    color: rgb(48,48,48);
-}
-.Block1{
-    Padding: 50px 50px 50px 50px;
-    background-color: whitesmoke;
-    border-radius: 50px;
-    box-shadow: black 20px 20px 100px -50px;
-    margin: 0px 0px 100px 0px;
-    position: relative;
-}
-.Block1::after{
-    content: "";
-    position: absolute;
-    width: 0px;
-    height: 0px;
-    border-right: 60px solid transparent;
-    border-bottom: 60px solid whitesmoke;
-    top: -55px;
-    left: 50px;
-} 
-#About{
-    margin: 75px 17% 75px 17%; 
-}
-
-.link{
-    color: blue;
-    text-decoration: underline;
-}
-
-#Projects{
-    margin: 50px 17% 50px 17%;
-}
-
-#Contact{
-    margin: 50px 17% 25px 17%;
-    padding-bottom: 50px;
-}
-.Block2{
-    height: 175px;
-    padding: 150px 0 150px 0;
-    background-image: url("./Media/world.png");
-    background-size: cover;
-    background-position: center;
-    margin: 100px 0px 50px 0px;
-    position: relative;
-}
-
-.button{
-    transition: all 0.1s ease-in-out;
-    border-style: dotted;
-    border-color: darkblue;
-    border-radius: 50%;
-    position: absolute;
-    background-color: hsl(196, 100%, 89%);
-    z-index: 3;
-}
-.button:hover{
-    transform: scale(1.1);  
-    background-color: rgb(252, 193, 82);
-}
-
-#paths{
-    position: absolute;
-}
-
-/* LINES */
-.line {
-    position: absolute;
-    height: 1px;
-    width: 50%;
-    border-top:3px dotted;
-    border-color: darkblue;
-    transform-origin: 50% 50%;
-    transform: rotate(0deg);
-    z-index: 1;
- }
-
-.circle{
-    padding: 20px;
-    background-color: rgb(52, 168, 209);
-}
-.resume{
-    top: -10%;
-    left: 35%;
-}
-.mail{
-    top: 40%;
-    left: 10%;
-}
-.linkedin{
-    top: 55%;
-    left: 45%;
-}
-.twitter{
-    top: 25%;
-    left: 70%;
-}
-.github{
-    top: 70%;
-    left: 75%;
-}
-
-.Footer{
+.title_main a{
+    font-size: 10rem;
     color: white;
-    text-align: center;
-    height: 75px;
-    padding-top: 50px;
-    background-color:rgb(48,48,48);
 }
-
-body{
-    color: rgb(48,48,48);
-    background-color: white;
-    font-family: "Roboto Mono";
-    font-size: 24px;
-}
-
-h1 {
-    font-family: "Helvetica";
-    font-size: 250px;
-}
-
-h2 {
-    font-family: "Helvetica";
-    font-size: 75px;
-}
-
-p {
-    line-height: 135%;
-}
-
-#LifeandEducation {
-    line-height: 175%;
-}
-
-#project_grid{
-    display: grid;
-    grid-template: auto;
-    height: 250px;
-    width: 100%;
-}
-.project{
-    background-color: whitesmoke;
-}
-
-
-/* Cursor */
-@keyframes blink { 50% { border-color: rgba(48,48,48,0%) }  }
-.txt-type > .txt {
-    border-right: 16px solid rgba(48,48,48, 90%);
-    animation: blink .5s step-end infinite alternate; 
-}
-
-/* Background */
+/* Background Effect*/
 
 .bg {
     animation:slide 3s ease-in-out infinite alternate;
@@ -281,3 +108,299 @@ p {
       transform:translateX(25%);
     }
   }
+
+/**************************************************************************
+    Content
+**************************************************************************/
+
+.content {
+    margin: 0 15% 0 15%;
+    position: relative;
+}
+
+/* About */
+
+p{
+    line-height: 150%;
+    color: black;
+    font-family: "Roboto Mono";
+    font-size: 1rem;
+}
+
+.heading{
+    color: rgb(48,48,48);
+    font-size: 3rem;
+    text-align: left;
+    padding: 2rem 0 2rem 0;
+}
+
+.container1{
+    Padding: 2rem 2rem 2rem 2rem;
+    background-color: whitesmoke;
+    border-radius: 2rem;
+    box-shadow: black 0.8rem 0.8rem 4rem -2rem;
+    margin: 0 0 4rem 0;
+    position: relative;
+}
+.container1::after{
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-right: 2rem solid transparent;
+    border-bottom: 2rem solid whitesmoke;
+    top: -2rem;
+    left: 2rem;
+}
+
+/* Cursor */
+@keyframes blink { 50% { border-color: rgba(48,48,48,0%) }  }
+.txt-type > .txt {
+    border-right: 16px solid rgba(48,48,48, 90%);
+    animation: blink .5s step-end infinite alternate; 
+}
+
+/* Projects */
+h4{
+    font-family:  "Roboto Mono";
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 5rem;
+}
+.card-flip {
+    height: 12rem;
+    margin: 1rem;
+    display: grid;
+    grid-template: 1fr / 1fr;
+    grid-template-areas: "frontAndBack";
+    transform-style: preserve-3d;
+    transition: all 0.7s ease;
+    perspective: 500rem;
+}
+.card-flip div {
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+
+.flip-container,
+.front,
+.back {
+    margin: 0 0;
+  height: 12rem;
+}
+.proj:hover .card-flip{
+    transform: rotateY(180deg);
+}
+
+/* project 2 */
+.one{
+    transform-style: preserve-3d;
+    transition: all 0.7s ease;
+}
+.one .front{
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    background: url(Media/lalaland.jpeg);
+    background-position: center;
+    background-size: cover;
+    grid-area: frontAndBack;
+}
+.one .back{
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    color: white;
+    background-color: rgb(105, 55, 172);
+    grid-area: frontAndBack;
+    transform: rotateY(-180deg);
+}
+
+/* project 2 */
+.two{
+  transform-style: preserve-3d;
+  transition: all 0.7s ease;
+}
+.two .front{
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    background: url(Media/stormtrooper.jpeg);
+    background-position: center;
+    background-size: cover;
+    grid-area: frontAndBack;
+}
+.two .back{
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    color: white;
+    background-color: rgb(80,80,80);
+    grid-area: frontAndBack;
+    transform: rotateY(-180deg);
+}
+
+/* project 3 */
+.three{
+    transform-style: preserve-3d;
+    transition: all 0.7s ease;
+}
+.three .front{
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    background:url(./Media/flyingpikachu.gif);
+    background-color: rgb(121, 200, 236);
+    background-position: center;
+    background-size: cover;
+    grid-area: frontAndBack;
+}
+.three .back{
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    color: white;
+    background-color: rgb(46, 142, 187);
+    grid-area: frontAndBack;
+    transform: rotateY(-180deg);
+}
+  
+
+/* Contact */
+
+.container2 {
+    margin: 2rem 4rem 6rem 4rem;
+    position: relative;
+    height: 16rem;
+    background-image: url("./Media/world.png");
+    background-size: contain;
+    background-position: center;
+}
+
+/* button animation */
+.button{
+    transition: all 0.1s ease-in-out;
+    border-style: dotted;
+    border-color: darkblue;
+    border-radius: 50%;
+    position: absolute;
+    background-color: hsl(196, 100%, 89%);
+    z-index: 3;
+}
+.button:hover{
+    transform: scale(1.1);  
+    background-color: rgb(252, 193, 82);
+}
+
+/* LINES */
+.line {
+    position: absolute;
+    height: 1px;
+    width: 50%;
+    border-top:3px dotted;
+    border-color: darkblue;
+    transform-origin: 50% 50%;
+    transform: rotate(0deg);
+    z-index: 1;
+ }
+
+ /* icons */
+
+.circle {
+    padding: 20px;
+    background-color: rgb(52, 168, 209);
+}
+.resume {
+    height: 8rem;
+    width: 8rem;
+    top: -10%;
+    left: 35%;
+}
+
+.mail {
+    height: 7rem;
+    width: 7rem;
+    top: 40%;
+    left: 10%;
+}
+.linkedin {
+    height: 6rem;
+    width: 6rem;
+    top: 55%;
+    left: 45%;
+}
+.twitter {
+    height: 5rem;
+    width: 5rem;
+    top: 25%;
+    left: 70%;
+}
+.github {
+    height: 4rem;
+    width: 4rem;
+    top: 70%;
+    left: 75%;
+}
+
+/* Footer */
+.Footer{
+    font-family: "Roboto Mono";
+    font-size: 0.5rem;
+    color: white;
+    text-align: center;
+    background-color:rgb(48,48,48);
+    padding: 5vh 0 5vh 0;
+}
+
+
+/**************************************************************************
+    Media Query
+**************************************************************************/
+
+
+/* Smartphone */
+@media only screen and (max-width : 375px) {
+    .title_main, .container1,.container2{
+        overflow-x: hidden;
+    }
+    
+    html{
+        font-size: 10px;
+    }
+    nav, .content{
+        margin: 0 5% 0 5%;
+    }
+    .line, .circle{
+        visibility: hidden;
+    }
+    .container2{
+        background-image: none;
+        padding-bottom: 4rem;
+    }
+    .button{
+        position: initial;
+    }
+    .resume, .mail,.linkedin,.twitter,.github {        
+        height: 4rem;
+        width: 4rem;
+    }
+    
+}
+
+/* iPads */
+@media only screen and (min-width:375px) and (max-width: 1024px){
+    .title_main, .container1,.container2{
+        overflow-x: hidden;
+    }
+    
+    html{
+        font-size: 18px;
+    }
+    nav, .content{
+        margin: 0 5% 0 5%;
+    }
+    .line, .circle{
+        visibility: hidden;
+    }
+    .container2{
+        background-image: none;
+        padding-bottom: 4rem;
+    }
+    .button{
+        position: initial;
+    }
+    .resume, .mail,.linkedin,.twitter,.github {        
+        height: 4rem;
+        width: 4rem;
+    }
+    
+}
+
