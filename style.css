@@ -376,6 +376,7 @@ h4{
     }
     nav{
         text-align: -webkit-left;
+	    margin-left: 2vw;
     }
     
     html{
