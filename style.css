@@ -410,6 +410,9 @@ h4{
     nav, .content{
         margin: 0 5vw 0 5vw;
     }
+    nav{
+        text-align: center;
+    }
     .line, .circle{
         visibility: hidden;
     }
