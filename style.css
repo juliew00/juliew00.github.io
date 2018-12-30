@@ -375,7 +375,7 @@ h4{
         overflow-x: hidden;
     }
     nav{
-        -webkit-text-align: right;
+        text-align: -webkit-left;
     }
     
     html{
@@ -411,7 +411,7 @@ h4{
         margin: 0 5vw 0 5vw;
     }
     nav{
-        -webkit-text-align: center;
+        text-align: -webkit-center;
     }
     .line, .circle{
         visibility: hidden;
