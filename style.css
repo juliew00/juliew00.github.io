@@ -173,9 +173,20 @@ h4{
     display: grid;
     grid-template: 1fr / 1fr;
     grid-template-areas: "frontAndBack";
-    transform-style: preserve-3d;
-    transition: all 0.7s ease;
     perspective: 500rem;
+
+
+	-webkit-transition: all 0.7s ease;
+	-webkit-transform-style: preserve-3d;
+
+	-moz-transition: all 0.7s ease;
+	-moz-transform-style: preserve-3d;
+  
+    -o-transition: all 0.7s ease;
+	-o-transform-style: preserve-3d;
+
+	transition: all 0.7s ease;
+    transform-style: preserve-3d;
 }
 .card-flip div {
     backface-visibility: hidden;
@@ -189,14 +200,32 @@ h4{
   height: 12rem;
 }
 .proj:hover .card-flip{
-    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(-180deg);
+}
+.one, .two, .three{
+	-webkit-transition: all 0.7s ease;
+	-webkit-transform-style: preserve-3d;
+
+	-moz-transition: all 0.7s ease;
+	-moz-transform-style: preserve-3d;
+  
+    -o-transition: all 0.7s ease;
+	-o-transform-style: preserve-3d;
+
+	transition: all 0.7s ease;
+    transform-style: preserve-3d;
+}
+.back{
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(-180deg);
 }
 
-/* project 2 */
-.one{
-    transform-style: preserve-3d;
-    transition: all 0.7s ease;
-}
+/* project 1 */
 .one .front{
     box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
     background: url(Media/lalaland.jpeg);
@@ -209,14 +238,9 @@ h4{
     color: white;
     background-color: rgb(105, 55, 172);
     grid-area: frontAndBack;
-    transform: rotateY(-180deg);
 }
 
 /* project 2 */
-.two{
-  transform-style: preserve-3d;
-  transition: all 0.7s ease;
-}
 .two .front{
     box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
     background: url(Media/stormtrooper.jpeg);
@@ -229,14 +253,9 @@ h4{
     color: white;
     background-color: rgb(80,80,80);
     grid-area: frontAndBack;
-    transform: rotateY(-180deg);
 }
 
 /* project 3 */
-.three{
-    transform-style: preserve-3d;
-    transition: all 0.7s ease;
-}
 .three .front{
     box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
     background:url(./Media/flyingpikachu.gif);
@@ -250,7 +269,6 @@ h4{
     color: white;
     background-color: rgb(46, 142, 187);
     grid-area: frontAndBack;
-    transform: rotateY(-180deg);
 }
   
 
