@@ -10,7 +10,9 @@ html{
     overflow-x: hidden;
     color:rgb(48,48,48);
 }
-
+body{
+    overflow-x: hidden;
+}
 /**************************************************************************
     Top bar
 **************************************************************************/
@@ -23,7 +25,7 @@ html{
     Navigation Section
 **************************************************************************/
 nav{
-    margin: 0 15% 0 15%;
+    margin: 0 15vw 0 15vw;
     text-align: right;
     padding: 1rem 0px 1rem 0px;
     word-spacing: 3rem;
@@ -38,6 +40,9 @@ nav a{
     /* for hover effect */
     background: linear-gradient(to right, rgba(255,255,255,0) 50%, rgba(255, 255, 0,1.0) 50%);
     transition: .15s ease-in-out;
+    -webkit-transition: .15s ease-in-out;
+    -o-transition: .15s ease-in-out;
+    -moz-transition: .15s ease-in-out;
     display: inline-block;
     background-position: left bottom;
     background-size: 200%;
@@ -114,7 +119,7 @@ nav a{
 **************************************************************************/
 
 .content {
-    margin: 0 15% 0 15%;
+    margin: 0 15vw 0 15vw;
     position: relative;
 }
 
@@ -369,12 +374,12 @@ h4{
     .title_main, .container1,.container2{
         overflow-x: hidden;
     }
+    nav{
+        text-align: center;
+    }
     
     html{
         font-size: 10px;
-    }
-    nav, .content{
-        margin: 0 5% 0 5%;
     }
     .line, .circle{
         visibility: hidden;
@@ -403,7 +408,7 @@ h4{
         font-size: 18px;
     }
     nav, .content{
-        margin: 0 5% 0 5%;
+        margin: 0 5vw 0 5vw;
     }
     .line, .circle{
         visibility: hidden;
