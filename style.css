@@ -375,8 +375,12 @@ h4{
     nav{
         overflow-x: hidden;
     }
+    .content{
+        margin: 0 5vw 0 5vw;
+    }
     nav{
-        text-align: -webkit-left;
+        text-align: -webkit-center;
+	margin: 0 0;
     }
     
     html{
@@ -408,11 +412,12 @@ h4{
     html{
         font-size: 18px;
     }
-    nav, .content{
+    .content{
         margin: 0 5vw 0 5vw;
     }
     nav{
         text-align: -webkit-center;
+	margin: 0 0;
     }
     .line, .circle{
         visibility: hidden;
