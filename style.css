@@ -377,10 +377,10 @@ h4{
         overflow-x: hidden;
     }
     nav{
-        text-align: -webkit-left;
-        margin: 0 0;
+        text-align: -webkit-center;
+        margin: 0 5vw 0 5vw;
     }
-    
+	
     html{
         font-size: 10px;
     }
@@ -402,7 +402,7 @@ h4{
 }
 
 /* iPads */
-@media only screen and (min-width:375px) and (max-width: 1024px){
+@media only screen and (min-width:376px) and (max-width: 1024px){
     nav{
         overflow-x: hidden;
     }
