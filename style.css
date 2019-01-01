@@ -10,9 +10,10 @@ html{
     overflow-x: hidden;
     color:rgb(48,48,48);
 }
-body{
+nav,body{
 	overflow-x: hidden;
 }
+
 /**************************************************************************
     Top bar
 **************************************************************************/
@@ -371,7 +372,7 @@ h4{
 
 /* Smartphone */
 @media only screen and (max-width : 375px) {
-    .title_main, .container1,.container2{
+    nav,.title_main, .container1,.container2{
         overflow-x: hidden;
     }
     nav{
@@ -400,7 +401,7 @@ h4{
 
 /* iPads */
 @media only screen and (min-width:375px) and (max-width: 1024px){
-    .title_main, .container1,.container2{
+    nav,.title_main, .container1,.container2{
         overflow-x: hidden;
     }
     
