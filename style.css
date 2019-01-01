@@ -10,8 +10,8 @@ html{
     overflow-x: hidden;
     color:rgb(48,48,48);
 }
-nav,body{
-	overflow-x: hidden;
+body{
+    overflow-x: hidden;
 }
 
 /**************************************************************************
@@ -26,6 +26,7 @@ nav,body{
     Navigation Section
 **************************************************************************/
 nav{
+    width: auto;
     margin: 0 15vw 0 15vw;
     text-align: right;
     padding: 1rem 0px 1rem 0px;
@@ -375,12 +376,9 @@ h4{
     nav{
         overflow-x: hidden;
     }
-    .content{
-        margin: 0 5vw 0 5vw;
-    }
     nav{
-        text-align: -webkit-center;
-	margin: 0 0;
+        text-align: -webkit-left;
+        margin: 1vw 1vw;
     }
     
     html{
@@ -408,7 +406,6 @@ h4{
     nav{
         overflow-x: hidden;
     }
-    
     html{
         font-size: 18px;
     }
@@ -417,7 +414,7 @@ h4{
     }
     nav{
         text-align: -webkit-center;
-	margin: 0 0;
+        margin: 0 5vw 0 5vw;
     }
     .line, .circle{
         visibility: hidden;
