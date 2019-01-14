@@ -200,7 +200,8 @@ p{
     margin: 0 0;
     height: 12rem;
 }
-.proj:hover .card-flip{
+.proj:hover .card-flip,
+.proj:active .card-flip{
     -webkit-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
     -o-transform: rotateY(180deg);
