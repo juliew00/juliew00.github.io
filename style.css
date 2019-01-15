@@ -8,6 +8,7 @@ html{
     font-size: 25px;
     font-family: Helvetica, sans-serif;
     color:rgb(48,48,48);
+	overflow-x:hidden;
 }
 body{
 	overflow-x: hidden;
