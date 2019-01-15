@@ -1,0 +1,524 @@
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+html{
+    font-size: 25px;
+    font-family: Helvetica, sans-serif;
+    overflow-x: hidden;
+    color:rgb(48,48,48);
+}
+body{
+    overflow-x: hidden;
+}
+
+/**************************************************************************
+    Top bar
+**************************************************************************/
+#topBorder{
+    height: 5vh;
+    background-color: rgb(48,48,48);
+}
+
+/**************************************************************************
+    Navigation Section
+**************************************************************************/
+nav{
+    width: auto;
+    margin: 0 15vw 0 15vw;
+    text-align: right;
+    padding: 1rem 0px 1rem 0px;
+    word-spacing: 3rem;
+}
+
+nav a{
+    font-family: "Roboto Mono";
+    font-size: 1rem;
+    color:rgb(48,48,48);
+    font-style: italic;
+    
+    /* for hover effect */
+    background: linear-gradient(to right, rgba(255,255,255,0) 50%, rgba(255, 255, 0,1.0) 50%);
+    transition: .15s ease-in-out;
+    -webkit-transition: .15s ease-in-out;
+    -o-transition: .15s ease-in-out;
+    -moz-transition: .15s ease-in-out;
+    display: inline-block;
+    background-position: left bottom;
+    background-size: 200%;
+}
+
+#navText{
+    text-align: right;
+}
+
+/**************************************************************************
+    Title
+**************************************************************************/
+
+.title_main{
+    padding: 20vh 0 25vh 0;
+    position: relative;
+    text-align: center;
+    text-shadow: 1px 1px rgb(80,80,80),
+    2px 2px rgb(80,80,80),
+    3px 3px rgb(80,80,80),
+    4px 4px rgb(80,80,80),
+    5px 5px rgb(80,80,80),
+    6px 6px rgb(80,80,80),
+    7px 7px rgb(80,80,80),
+    8px 8px rgb(80,80,80),
+    9px 9px rgb(80,80,80),
+    10px 10px rgb(80,80,80),
+    11px 11px  rgb(80,80,80),
+    12px 12px rgb(80,80,80),
+    13px 13px rgb(80,80,80),
+    14px 14px rgb(80,80,80),
+    15px 15px rgb(80,80,80),
+    16px 16px rgb(80,80,80),
+    17px 17px rgb(80,80,80);
+}
+.title_main a{
+    font-size: 10rem;
+    color: white;
+}
+/* Background Effect*/
+
+.bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, rgb(255, 75, 75) 50%, rgb(81, 171, 255) 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position: absolute;
+    right: -50%;
+    top:0;
+    z-index:-1;
+  }
+  
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+  }
+  
+  .bg3 {
+    animation-duration:5s;
+  }
+
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
+
+/**************************************************************************
+    Content
+**************************************************************************/
+
+.content {
+    margin: 0 15vw 0 15vw;
+    position: relative;
+}
+
+/* About */
+
+.profilePhoto{
+    position: inline-block;
+    border-style: solid;
+    border-color: whitesmoke;
+    border-radius: 50%;
+
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.5);
+}
+
+p{
+    line-height: 150%;
+    color: black;
+    font-family: "Roboto Mono";
+    font-size: 1rem;
+}
+
+.heading{
+    color: rgb(48,48,48);
+    font-size: 3rem;
+    text-align: left;
+    padding: 2rem 0 2rem 0;
+    position: relative;
+}
+
+.container1{
+    Padding: 2rem 2rem 2rem 2rem;
+    background-color: whitesmoke;
+    border-radius: 2rem;
+    box-shadow: black 0.8rem 0.8rem 4rem -2rem;
+    margin: 0 0 4rem 0;
+    position: relative;
+}
+.container1::after{
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-right: 2rem solid transparent;
+    border-bottom: 2rem solid whitesmoke;
+    top: -2rem;
+    left: 3.5rem;
+}
+
+/* Cursor */
+@keyframes blink { 50% { border-color: rgba(48,48,48,0%) }  }
+.txt-type > .txt {
+    border-right: 16px solid rgba(48,48,48, 90%);
+    animation: blink .5s step-end infinite alternate; 
+}
+
+/* Projects */
+.card-flip {
+    height: 12rem;
+    margin: 1rem;
+    display: grid;
+    grid-template: 1fr / 1fr;
+    grid-template-areas: "frontAndBack";
+    perspective: 500rem;
+
+
+	-webkit-transition: all 0.7s ease;
+	-webkit-transform-style: preserve-3d;
+
+	-moz-transition: all 0.7s ease;
+	-moz-transform-style: preserve-3d;
+  
+    -o-transition: all 0.7s ease;
+	-o-transform-style: preserve-3d;
+
+	transition: all 0.7s ease;
+    transform-style: preserve-3d;
+}
+.card-flip div {
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+
+.flip-container,
+.front,
+.back {
+    margin: 0 0;
+    height: 12rem;
+}
+.proj:hover .card-flip,
+.proj:active .card-flip{
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(-180deg);
+}
+.one, .two, .three{
+	-webkit-transition: all 0.7s ease;
+	-webkit-transform-style: preserve-3d;
+
+	-moz-transition: all 0.7s ease;
+	-moz-transform-style: preserve-3d;
+  
+    -o-transition: all 0.7s ease;
+	-o-transform-style: preserve-3d;
+
+	transition: all 0.7s ease;
+    transform-style: preserve-3d;
+}
+.back{
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(-180deg);
+
+    position: relative;
+}
+.front{
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+}
+
+h4{
+    font-size: 1rem;
+    padding: 1.5rem 3rem 1.5rem 3rem;
+    position: absolute;
+    text-align: left;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: lighter;
+    line-height: 1.5rem;
+}
+
+/* Project button links */
+.projButtons{
+    width: auto;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    z-index: 5;
+    position: absolute;
+    left: 50%;
+    top: 70%;
+}
+
+.project-button{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.9rem;
+    text-align: center;
+    color: rgb(212, 212, 212);
+    padding: 0.5rem;
+    margin: 0 1rem;
+
+    border-style: solid;
+    border-color: white;
+    border-radius: 0.75rem;
+
+    box-shadow: 0px 3px 15px rgba(0,0,0,1);
+}
+.project-button:hover {
+    color:  rgb(48, 48, 48);
+    background-color: white;
+}
+.two .project-button:hover{
+    color: black;
+}
+
+.project-button:active,.project-button:active:after,.project-button:active:before {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+/* project 1 */
+.one .front{
+    background: url(Media/CoinCounter.png);
+    background-position: center;
+    background-size: cover;
+    grid-area: frontAndBack;
+}
+.one .back{
+    color: white;
+    background-color: rgb(48, 48, 48);
+    grid-area: frontAndBack;
+}
+
+
+
+/* project 2 */
+.two .front{
+    background: url(Media/QuoteBook.png);
+    background-position: center;
+    background-size: cover;
+    grid-area: frontAndBack;
+}
+.two .back{
+    color: white;
+    background-color: rgb(146, 66, 0);
+    grid-area: frontAndBack;
+}
+
+.two .project-button{
+    color: white;
+}
+
+.two h4{
+    font-size: 0.8rem;
+}
+
+.two .projButtons {
+    left: 41.96%;
+    top: 75%;
+}
+
+/* project 3 
+.three .front{
+    background:url(./Media/flyingpikachu.gif);
+    background-color: rgb(121, 200, 236);
+    background-position: center;
+    background-size: cover;
+    grid-area: frontAndBack;
+}
+.three .back{
+    color: white;
+    background-color: rgb(46, 142, 187);
+    grid-area: frontAndBack;
+}
+
+*/
+  
+
+/* Contact */
+
+.container2 {
+    margin: 2rem 4rem 6rem 4rem;
+    position: relative;
+    height: 16rem;
+    background-image: url("./Media/world.png");
+    background-size: contain;
+    background-position: center;
+}
+
+/* button animation */
+.button{
+    transition: all 0.1s ease-in-out;
+    border-style: dotted;
+    border-color: darkblue;
+    border-radius: 50%;
+    position: absolute;
+    background-color: hsl(196, 100%, 89%);
+    z-index: 3;
+}
+.button:hover{
+    transform: scale(1.1);  
+    background-color: rgb(252, 193, 82);
+}
+
+/* LINES */
+.line {
+    position: absolute;
+    height: 1px;
+    width: 50%;
+    border-top:3px dotted;
+    border-color: darkblue;
+    transform-origin: 50% 50%;
+    transform: rotate(0deg);
+    z-index: 1;
+ }
+
+ /* icons */
+
+.circle {
+    padding: 20px;
+    background-color: rgb(52, 168, 209);
+}
+.resume {
+    height: 8rem;
+    width: 8rem;
+    top: -10%;
+    left: 35%;
+}
+
+.mail {
+    height: 7rem;
+    width: 7rem;
+    top: 40%;
+    left: 10%;
+}
+.linkedin {
+    height: 6rem;
+    width: 6rem;
+    top: 55%;
+    left: 45%;
+}
+.twitter {
+    height: 5rem;
+    width: 5rem;
+    top: 25%;
+    left: 70%;
+}
+.github {
+    height: 4rem;
+    width: 4rem;
+    top: 70%;
+    left: 75%;
+}
+
+/* Footer */
+.Footer{
+    font-family: "Roboto Mono";
+    font-size: 0.5rem;
+    color: white;
+    text-align: center;
+    background-color:rgb(48,48,48);
+    padding: 5vh 0 5vh 0;
+}
+
+
+/**************************************************************************
+    Media Query
+**************************************************************************/
+
+
+/* Smartphone */
+@media only screen and (max-width : 768px) {
+
+    nav{
+        overflow-x: hidden;
+        text-align: -webkit-left;
+        margin: 0 5vw 0 5vw;
+    }
+    html{
+        font-size: 10px;
+    }
+    .content{
+        margin: 0 5vw 0 5vw;
+    }
+
+    .line, .circle{
+        visibility: hidden;
+    }
+    .container2{
+        background-image: none;
+        padding-bottom: 0;
+        position: relative;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .button{
+        position: inherit;
+        margin: auto;
+        display: inline-block;
+    }
+    .resume, .mail,.linkedin,.twitter,.github {        
+        height: auto;
+        width: 10vw;
+    }
+}
+
+/* iPads */
+@media only screen and (min-width:768px) and (max-width: 1024px){
+    nav{
+        overflow-x: hidden;
+        text-align: -webkit-center;
+        margin: 0 5vw 0 5vw;
+    }
+    html{
+        font-size: 18px;
+    }
+    .content{
+        margin: 0 5vw 0 5vw;
+    }
+
+    .line, .circle{
+        visibility: hidden;
+    }
+    
+    .container2{
+        background-image: none;
+        padding-bottom: 0;
+        position: relative;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .button{
+        position: inherit;
+        margin: auto;
+        display: inline-block;
+    }
+    .resume, .mail,.linkedin,.twitter,.github {        
+        height: auto;
+        width: 12vw;
+    }
+    
+}
+
+@media only screen and (min-width:1600px){
+    .line, .circle{
+        visibility: hidden;
+    }
+}
+

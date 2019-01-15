@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Julie's Portfolio
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+</head>
+
+<script src="main.js"></script>
+
+<body>
+    <div id="topBorder"></div>
+
+    <nav>
+        <a id="navAbout" href="#About"
+        onmouseover="highlight(navAbout)"
+        onmouseout="unhighlight(navAbout)">About</a>
+
+        <a id="navProjects" href="#Projects" 
+        onmouseover="highlight(navProjects)"
+        onmouseout="unhighlight(navProjects)">Projects</a>
+
+        <a id="navContact" href="#Contact" 
+        onmouseover="highlight(navContact)"
+        onmouseout="unhighlight(navContact)">Contact</a>
+    </nav>
+
+    <div class="title_main">
+        <h1>
+            <a href="./index.html"><strong>julie wu</strong></a>
+            <div class="bg"></div>
+            <div class="bg bg2"></div>
+            <div class="bg bg3"></div>
+        </h1>
+    </div>
+
+    <div class="content">
+
+        <div id="About">
+
+
+            <h2 class="heading"><img class="profilePhoto" src="./Media/Profile.jpeg" alt="JulieWuProfile" width="150" height="150">   About Me</h2>
+
+            <div class="container1">
+                <p id="Introduction">
+                    Hey! I'm <strong>Julie</strong>, and I
+                    <span 
+                        class="txt-type" data-wait="3000" 
+                        data-words= '["am an aspiring coder.", 
+                                    "am just a young star looking for her galaxy.",
+                                    "love my dog, Micky.",
+                                    "am an amateur guitarist.",
+                                    "am a film lover.",
+                                    "am a casual chess player.",
+                                    "enjoy playing tennis and basketball!",
+                                    "miss vine :("]'>
+                    </span>           
+                </p>
+                <br>
+                <p id="LifeandEducation">
+                    Born and raised in <span style="color: rgb(0, 107, 144)"><strong>Toronto, Canada.</strong></span>, I'm currently 
+                    a student studying <strong>Mathematics</strong> & <strong>Business Administration</strong> at the 
+                    <strong><span style="background-color:rgb(255, 213, 79)">University of Waterloo</span></strong> 
+                    & <strong><span style="background-color:rgb(61, 22, 139); color: white">Wilfrid Laurier University</span></strong>.
+                    <br>I'm an individual with a passion for programming,technology & learning new things, I hope in pursuing a career in software engineering!
+                </p>
+                <br>
+                <p id="Information">
+                    Welcome, check out my projects, contact me via email, or add me social media below!
+                    <br>
+                    <br>
+                    Link to my resume: (<a href="Media/julie_wu_resume_2018.pdf" target="_blank" class="link"><u>julie_wu_resume_2018.pdf</u></a>)
+                </p>    
+            </div>
+        </div>
+
+        <div id="Projects">
+            <h2 class="heading">Projects</h2>
+
+            <div class="containerGrid">
+                <div class="proj one">
+                    <div class="card-flip">
+                        <div class="front">
+                        </div>
+                        <div class="back">
+                            <h4>CoinCounter is an iOS game made using Xcode9 and written in Swift4.
+                            It's a simple game that challenges the user's speed and quick math abilities
+                            by making them count coins under pressure. I took on this project to learn 
+                            about app development and object oriented programming!</h4>
+                            <div class="projButtons">
+                                <a href="https://github.com/juliew00/CoinCounter" target="_blank" class="project-button">github</a>
+                                <a href="CCVideoDemo.html" target="_blank" class="project-button">Video Demo</a>
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+                <div class="proj two">
+                    <div class="card-flip">
+                        <div class="front">
+                        </div>
+                        <div class="back">
+                            <h4>QuoteBook is a dictionary like platform where user's can organize, add, remove, 
+                                search, and edit their favourite quotes! As someone who loves to save inspirational,
+                                film, funny and interesting quotes, I found them stored scattered across multiple
+                                platforms. That's when I came up with the idea for QuoteBook. It's currently running as a
+                                python program, however I plan to develop it further into a real application soon!
+                            </h4>
+                            <div class="projButtons">
+                                <a href="https://github.com/juliew00/QuoteBook" target="_blank" class="project-button">github</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--
+                <div class="proj three">
+                    <div class="card-flip">
+                        <div class="front">
+                        </div>
+                        <div class="back">
+                            <h4>projects coming soon ...</h4>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    
+
+        <div id="Contact">
+
+            <h2 class="heading">💬 Connect</h2>
+        
+                <div class="container2">
+                
+
+                    <a href="Media/julie_wu_resume_2018.pdf" target="_blank">
+                        <img class="resume button" 
+                            src="Media/resume_icon.png">
+                    </a>
+            
+                    <a href="mailto:julie-wu@outlook.com">
+                        <img class="mail button"
+                            src="Media/Mail_icon.png">
+                    </a>
+            
+                    <a href="https://www.linkedin.com/in/julie-wu/" target="_blank">
+                    <img class="linkedin button" 
+                            src="Media/linkedin_icon.png">
+                    </a>
+            
+                    <a href="https://twitter.com/JumboJulie" target="_blank">
+                        <img class="twitter button" 
+                            src="Media/twitter_icon.png">
+                    </a>
+            
+                    <a href="https://github.com/juliew00" target="_blank">
+                        <img class="github button" 
+                            src="Media/github_icon.png">
+                    </a>
+            
+                    <div class="button circle 1" style="top:10%; left:10%"></div>
+                    <div class="button circle 2" style="top:80%; left:30%"></div>
+                    <div class="button circle 3" style="top:0%; left:75%"></div>
+                    <div class="button circle 4" style="top:55%; left:93%"></div>
+                    <div class="button circle 5" style="top:100%; left:65%"></div>
+            
+                    <div class="line line1" style ="top: 12%; left: 15%; width: 22%; transform: rotate(-5deg);"></div>
+                    <div class="line line2" style ="top: 29%; left: 10%; width: 12%; transform: rotate(75deg);"></div>
+                    <div class="line line3" style ="top: 35%; left: 25%; width: 14%; transform: rotate(-45deg);"></div>
+                    <div class="line line4" style ="top: 44.5%; left: 44%; width: 12%; transform: rotate(80deg);"></div>
+                    <div class="line line6" style ="top: 26%; left: 56%; width: 16%; transform: rotate(30deg);"></div>
+                    <div class="line line7" style ="top: 68%; left: 29%; width: 16%; transform: rotate(5deg);"></div>
+                    <div class="line line8" style ="top: 56%; left: 60%; width: 14%; transform: rotate(-35deg);"></div>
+                    <div class="line line9" style ="top: 74%; left: 62%; width: 15%; transform: rotate(5deg);"></div>
+                    <div class="line line10" style ="top: 61%; left: 74%; width: 11%; transform: rotate(80deg);"></div>
+                    <div class="line line11" style ="top: 8%; left: 57.5%; width: 18%; transform: rotate(-5deg);"></div>
+                    <div class="line line12" style ="top: 17%; left: 73.5%; width: 7%; transform: rotate(90deg);"></div>
+                    <div class="line line13" style ="top: 50%; left: 83%; width: 14%; transform: rotate(30deg);"></div>
+                    <div class="line line14" style ="top: 70%; left: 85%; width: 12%; transform: rotate(-37deg);"></div>
+                    <div class="line line15" style ="top: 80%; left: 35%; width: 12%; transform: rotate(-20deg);"></div>
+                    <div class="line line16" style ="top: 76%; left: 26%; width: 7%; transform: rotate(50deg);"></div>
+                    <div class="line line17" style ="top: 92.7%; left: 56.7%; width: 11%; transform: rotate(50deg);"></div>
+                    <div class="line line17" style ="top: 95.5%; left: 68.5%; width: 10%; transform: rotate(-40deg);"></div>
+                
+                </div>
+        </div>
+
+    </div>
+
+    <footer class="Footer">
+        <h3>Made by Julie Wu - 2018</h3>
+    </footer>
+</body>
+</html>
