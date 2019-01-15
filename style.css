@@ -236,11 +236,12 @@ p{
 
 h4{
     font-size: 1rem;
-    font-family: "Helvetica";
-    font-weight: lighter;
-    text-align: center;
     padding: 1.5rem 3rem 1.5rem 3rem;
     position: absolute;
+    text-align: left;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: lighter;
+    line-height: 1.5rem;
 }
 
 /* Project button links */
@@ -254,9 +255,7 @@ h4{
     left: 50%;
     top: 70%;
 }
-.projButtons a{
-    background-color: rgb(48, 48, 48);
-}
+
 .project-button{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 0.9rem;
@@ -274,6 +273,9 @@ h4{
 .project-button:hover {
     color:  rgb(48, 48, 48);
     background-color: white;
+}
+.two .project-button:hover{
+    color: black;
 }
 
 .project-button:active,.project-button:active:after,.project-button:active:before {
@@ -294,28 +296,35 @@ h4{
     grid-area: frontAndBack;
 }
 
-.one h4{
-    text-align: left;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: lighter;
-    line-height: 1.5rem;
-}
 
 
 /* project 2 */
 .two .front{
-    background: url(Media/stormtrooper.jpeg);
+    background: url(Media/QuoteBook.png);
     background-position: center;
     background-size: cover;
     grid-area: frontAndBack;
 }
 .two .back{
     color: white;
-    background-color: rgb(80,80,80);
+    background-color: rgb(146, 66, 0);
     grid-area: frontAndBack;
 }
 
-/* project 3 */
+.two .project-button{
+    color: white;
+}
+
+.two h4{
+    font-size: 0.8rem;
+}
+
+.two .projButtons {
+    left: 41.96%;
+    top: 75%;
+}
+
+/* project 3 
 .three .front{
     background:url(./Media/flyingpikachu.gif);
     background-color: rgb(121, 200, 236);
@@ -328,6 +337,8 @@ h4{
     background-color: rgb(46, 142, 187);
     grid-area: frontAndBack;
 }
+
+*/
   
 
 /* Contact */
@@ -442,14 +453,19 @@ h4{
     }
     .container2{
         background-image: none;
-        padding-bottom: 4rem;
+        padding-bottom: 0;
+        position: relative;
+        text-align: center;
+        margin-bottom: 0;
     }
     .button{
-        position: initial;
+        position: inherit;
+        margin: auto;
+        display: inline-block;
     }
     .resume, .mail,.linkedin,.twitter,.github {        
-        height: 4rem;
-        width: 4rem;
+        height: auto;
+        width: 10vw;
     }
 }
 
@@ -470,17 +486,29 @@ h4{
     .line, .circle{
         visibility: hidden;
     }
+    
     .container2{
         background-image: none;
-        padding-bottom: 4rem;
+        padding-bottom: 0;
+        position: relative;
+        text-align: center;
+        margin-bottom: 0;
     }
     .button{
-        position: initial;
+        position: inherit;
+        margin: auto;
+        display: inline-block;
     }
     .resume, .mail,.linkedin,.twitter,.github {        
-        height: 4rem;
-        width: 4rem;
+        height: auto;
+        width: 12vw;
     }
     
+}
+
+@media only screen and (min-width:1600px){
+    .line, .circle{
+        visibility: hidden;
+    }
 }
 
