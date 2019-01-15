@@ -7,8 +7,10 @@
 html{
     font-size: 25px;
     font-family: Helvetica, sans-serif;
-    overflow-x: hidden;
     color:rgb(48,48,48);
+}
+body{
+	overflow-x: hidden;
 }
 
 /**************************************************************************
